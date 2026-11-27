@@ -1,465 +1,450 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Reachna Kim | Academic Homepage</title>
-
-    <meta name="description" content="Reachna Kim - Distributed AI, Edge Computing, Computer Networks and IoT.">
-
-    <style>
-        :root {
-            --primary: #245b92;
-            --text: #30343b;
-            --muted: #6b7280;
-            --border: #e5e7eb;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            background: #ffffff;
-            color: var(--text);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        nav {
-            border-bottom: 1px solid var(--border);
-        }
-
-        .nav-container {
-            max-width: 960px;
-            margin: auto;
-            padding: 18px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .nav-name {
-            font-size: 19px;
-            font-weight: bold;
-            color: var(--text);
-        }
-
-        .nav-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 22px;
-        }
-
-        .nav-links a {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        main {
-            max-width: 960px;
-            margin: 55px auto;
-            padding: 0 24px;
-        }
-
-        .profile {
-            display: flex;
-            align-items: center;
-            gap: 35px;
-            margin-bottom: 40px;
-        }
-
-        .profile-photo {
-            width: 175px;
-            height: 210px;
-            object-fit: cover;
-            border-radius: 8px;
-            background: #f1f5f9;
-        }
-
-        h1 {
-            font-size: 38px;
-            font-weight: 600;
-            margin: 0 0 8px;
-            line-height: 1.2;
-        }
-
-        .subtitle {
-            color: var(--muted);
-            font-size: 17px;
-        }
-
-        .social-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18px;
-            margin-top: 15px;
-        }
-
-        section {
-            margin-top: 38px;
-        }
-
-        h2 {
-            font-size: 23px;
-            font-weight: 600;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 9px;
-            margin-bottom: 20px;
-        }
-
-        .news-item {
-            display: grid;
-            grid-template-columns: 105px 1fr;
-            gap: 15px;
-            margin-bottom: 12px;
-        }
-
-        .date {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .publication {
-            padding: 16px 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .publication-title {
-            font-size: 17px;
-            font-weight: bold;
-            color: var(--primary);
-        }
-
-        .entry {
-            margin-bottom: 22px;
-        }
-
-        .entry-title {
-            font-weight: bold;
-            font-size: 17px;
-        }
-
-        .entry-meta {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        footer {
-            text-align: center;
-            color: var(--muted);
-            font-size: 13px;
-            border-top: 1px solid var(--border);
-            padding: 25px;
-            margin-top: 60px;
-        }
-
-        @media (max-width: 600px) {
-            .profile {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            h1 {
-                font-size: 32px;
-            }
-
-            main {
-                margin-top: 30px;
-            }
-
-            .news-item {
-                grid-template-columns: 85px 1fr;
-                gap: 10px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-<nav>
-    <div class="nav-container">
-        <a class="nav-name" href="#">Reachna Kim</a>
-
-        <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-        </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Reachna Kim — distributed AI, communication networks and edge intelligence." name="description"/>
+  <title>
+   Reachna Kim | Academic Homepage
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <nav class="container">
+    <a href="#about">
+     Home
+    </a>
+    <a href="#research">
+     Research
+    </a>
+    <a href="#education">
+     Education
+    </a>
+    <a href="#experience">
+     Experience
+    </a>
+    <a href="#projects">
+     Projects
+    </a>
+    <a href="#publications">
+     Publications
+    </a>
+    <a href="#news">
+     News
+    </a>
+    <a href="#awards">
+     Awards
+    </a>
+    <a href="assets/documents/CV.pdf" rel="noopener" target="_blank">
+     CV
+    </a>
+   </nav>
+  </header>
+  <main class="container">
+   <section class="hero" id="about">
+    <img alt="Reachna Kim" class="portrait" src="assets/images/profile.png"/>
+    <div>
+     <h1>
+      Reachna Kim
+     </h1>
+     <p class="role">
+      Master’s Graduate in Computer Networks and IoT Systems
+     </p>
+     <p>
+      Conservatoire national des arts et métiers (CNAM)
+      <br/>
+      Former Research Intern, Inria Saclay — TRiBE Team
+      <br/>
+      Paris, France
+     </p>
+     <div class="social">
+      <a href="mailto:kimreachna@gmail.com">
+       [ Email ]
+      </a>
+      <a href="assets/documents/CV.pdf" rel="noopener" target="_blank">
+       [ CV ]
+      </a>
+      <a href="https://github.com/KimReachna">
+       [ GitHub ]
+      </a>
+      <a href="https://www.linkedin.com/in/reachna-kim/">
+       [ LinkedIn ]
+      </a>
+     </div>
     </div>
-</nav>
-
-<main>
-
-    <!-- PROFILE -->
-
-    <div class="profile">
-
-        <!-- Add your profile photo later -->
-
-        <div>
-            <h1>Reachna Kim</h1>
-
-            <div class="subtitle">
-                Distributed AI · Edge Computing · IoT
-            </div>
-
-            <p>
-                Master's Graduate, CNAM Paris<br>
-                Former Research Intern, Inria Saclay<br>
-                Paris, France
-            </p>
-
-            <div class="social-links">
-                <a href="https://github.com/KimReachna">
-                    GitHub
-                </a>
-
-                <a href="https://www.linkedin.com/in/reachna-kim/">
-                    LinkedIn
-                </a>
-            </div>
-        </div>
-
+   </section>
+   <section id="research">
+    <h2>
+     Research Interests
+    </h2>
+    <p>
+     I received my Master’s degree in Computer Networks and IoT Systems from CNAM Paris, where I graduated as
+     <strong>
+      major de promotion
+     </strong>
+     (top-ranked student in my cohort).
+    </p>
+    <p>
+     Previously, I completed a research internship within the TRiBE team at Inria Saclay, under the supervision of Dr. Cédric Adjih and Dr. Pengwenlong Gu, working on communication-efficient split inference and adaptive feature transmission.
+    </p>
+    <p>
+     My research interests lie at the intersection of
+     <strong>
+      artificial intelligence, communication networks and distributed systems
+     </strong>
+     , particularly distributed AI, edge intelligence, federated learning, intelligent networked systems and resource-efficient computing.
+    </p>
+   </section>
+   <section id="education">
+    <h2>
+     Education
+    </h2>
+    <article class="entry institution">
+     <img alt="" class="logo" loading="lazy" src="assets/logos/cnam.png"/>
+     <div class="institution-content">
+      <h3>
+       Conservatoire national des arts et métiers (CNAM)
+      </h3>
+      <p>
+       MSc in Computer Networks and IoT Systems
+      </p>
+      <p class="muted">
+       Paris, France
+      </p>
+      <p class="distinction">
+       Major de promotion
+      </p>
+     </div>
+     <div class="entry-date">
+      Sep 2024 – Sep 2026
+     </div>
+    </article>
+    <article class="entry institution">
+     <img alt="" class="logo" loading="lazy" src="assets/logos/rudn.png"/>
+     <div class="institution-content">
+      <h3>
+       Peoples’ Friendship University of Russia (RUDN)
+      </h3>
+      <p>
+       BSc in Applied Informatics
+      </p>
+      <p class="muted">
+       Moscow, Russia
+      </p>
+      <p>
+       Bachelor’s thesis: Building a multicast network connection model to analyse the age of received information.
+      </p>
+     </div>
+     <div class="entry-date">
+      Sep 2020 – Jun 2024
+     </div>
+    </article>
+    <article class="entry institution">
+     <img alt="" class="logo" loading="lazy" src="assets/logos/ufa.png"/>
+     <div class="institution-content">
+      <h3>
+       Ufa State Aviation Technical University
+      </h3>
+      <p>
+       Preparatory Course in Engineering and Russian Language
+      </p>
+      <p class="muted">
+       Ufa, Russia
+      </p>
+      <p>
+       One-year foundation program in Mathematics, Physics, Informatics, and Russian language.
+      </p>
+     </div>
+     <div class="entry-date">
+      Sep 2019 – Jun 2020
+     </div>
+    </article>
+   </section>
+   <section id="experience">
+    <h2>
+     Experience
+    </h2>
+    <article class="entry institution">
+     <img alt="" class="logo" loading="lazy" src="assets/logos/inria.png"/>
+     <div class="institution-content">
+      <h3>
+       Inria Saclay — TRiBE Team
+      </h3>
+      <p class="muted">
+       Research Intern · Palaiseau, France
+      </p>
+      <p>
+       Developed a closed-loop progressive feature transmission framework and evaluated feature completion, learned request selection and adaptive stopping for split inference.
+      </p>
+     </div>
+     <div class="entry-date">
+      Apr–Sep 2026
+     </div>
+    </article>
+    <article class="entry institution">
+     <img alt="" class="logo" loading="lazy" src="assets/logos/cedric.png"/>
+     <div class="institution-content">
+      <h3>
+       CEDRIC Laboratory — CNAM
+      </h3>
+      <p class="muted">
+       Research Intern · Paris, France
+      </p>
+      <p>
+       Investigated federated learning for distributed anomaly-classification tasks using centralized and federated baselines.
+      </p>
+     </div>
+     <div class="entry-date">
+      Jun–Sep 2025
+     </div>
+    </article>
+    <article class="entry institution">
+     <img alt="" class="logo" loading="lazy" src="assets/logos/rudn.png"/>
+     <div class="institution-content">
+      <h3>
+       Peoples’ Friendship University of Russia (RUDN)
+      </h3>
+      <p class="muted">
+       Research Intern · Moscow, Russia
+      </p>
+      <p>
+       Developed a two-class resource-constrained multicast service model and analysed loss probability and resource occupancy.
+      </p>
+     </div>
+     <div class="entry-date">
+      Mar–Jun 2024
+     </div>
+    </article>
+    <article class="entry institution">
+     <img alt="" class="logo" loading="lazy" src="assets/logos/rudn.png"/>
+     <div class="institution-content">
+      <h3>
+       Peoples’ Friendship University of Russia (RUDN)
+      </h3>
+      <p class="muted">
+       Research Intern · Moscow, Russia
+      </p>
+      <p>
+       Studied multiservice communication networks using Markov and queueing-based models.
+      </p>
+     </div>
+     <div class="entry-date">
+      Apr–Jun 2023
+     </div>
+    </article>
+   </section>
+   <section id="projects">
+    <h2>
+     Selected Projects
+    </h2>
+    <div class="project-grid">
+     <article class="project">
+      <p class="muted">
+       Inria · 2026
+      </p>
+      <h3>
+       Progressive Split Inference
+      </h3>
+      <p>
+       Adaptive feature transmission and completion for semantic segmentation under communication constraints.
+      </p>
+      <p class="tech">
+       DINOv2 · PyTorch · Edge AI
+      </p>
+     </article>
+     <article class="project">
+      <p class="muted">
+       2026
+      </p>
+      <h3>
+       Distributed Inference under Partial Information
+      </h3>
+      <p>
+       Lightweight reconstruction models for classification with incomplete information.
+      </p>
+      <p class="tech">
+       Machine Learning · Feature Reconstruction
+      </p>
+     </article>
+     <article class="project">
+      <p class="muted">
+       CEDRIC · 2025
+      </p>
+      <h3>
+       Federated Learning for Network Anomaly Detection
+      </h3>
+      <p>
+       Centralized and federated baselines, convergence and communication–accuracy trade-offs.
+      </p>
+      <p class="tech">
+       PyTorch · FedAvg · FedProx
+      </p>
+     </article>
+     <article class="project">
+      <p class="muted">
+       2025
+      </p>
+      <h3>
+       IoT Network Simulation
+      </h3>
+      <p>
+       Evaluation of packet delivery ratio, latency and communication performance.
+      </p>
+      <p class="tech">
+       Contiki-NG · Cooja
+      </p>
+     </article>
+     <article class="project">
+      <p class="muted">
+       2024
+      </p>
+      <h3>
+       Network Emulation and QoS Evaluation
+      </h3>
+      <p>
+       Reproducible experiments on throughput, latency, jitter, packet loss and traffic shaping.
+      </p>
+      <p class="tech">
+       Mininet · iPerf3 · NetEm
+      </p>
+     </article>
+     <article class="project">
+      <p class="muted">
+       RUDN · 2024
+      </p>
+      <h3>
+       Multicast Traffic Modelling
+      </h3>
+      <p>
+       Resource-constrained service models for multicast traffic in 5G/mmWave networks.
+      </p>
+      <p class="tech">
+       Python · Queueing Theory
+      </p>
+     </article>
     </div>
-
-    <!-- ABOUT -->
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a Master's graduate in Computer Networks
-            and IoT Systems from the Conservatoire national
-            des arts et métiers (CNAM), Paris, where I
-            graduated as the top-ranked student in my
-            cohort (major de promotion).
-        </p>
-
-        <p>
-            I recently completed a research internship
-            within the TRiBE team at Inria Saclay, working
-            on iterative closed-loop split computing for
-            communication-efficient distributed AI inference.
-        </p>
-
-        <p>
-            My research interests lie at the intersection
-            of artificial intelligence, computer networks,
-            and distributed systems, with a particular
-            interest in resource-efficient AI for edge
-            and IoT environments.
-        </p>
-
-        <p>
-            <strong>Research interests:</strong>
-            Distributed AI, Split Computing, Edge Intelligence,
-            Federated Learning, Computer Networks, and IoT.
-        </p>
-
-    </section>
-
-    <!-- NEWS -->
-
-    <section id="news">
-
-        <h2>News</h2>
-
-        <div class="news-item">
-            <span class="date">Dec 2026</span>
-            <span>
-                Upcoming research presentation at the
-                Inria TRiBE team seminar.
-            </span>
-        </div>
-
-        <div class="news-item">
-            <span class="date">Nov 2026</span>
-            <span>
-                Graduated from CNAM Paris as
-                <strong>major de promotion</strong>.
-            </span>
-        </div>
-
-        <div class="news-item">
-            <span class="date">Oct 2026</span>
-            <span>
-                Presented our research at JWOC 2026,
-                held at Télécom Paris.
-            </span>
-        </div>
-
-        <div class="news-item">
-            <span class="date">Sep 2026</span>
-            <span>
-                Completed my research internship
-                at Inria Saclay.
-            </span>
-        </div>
-
-        <div class="news-item">
-            <span class="date">Apr 2026</span>
-            <span>
-                Joined the TRiBE research team
-                at Inria Saclay.
-            </span>
-        </div>
-
-    </section>
-
-    <!-- RESEARCH -->
-
-    <section id="research">
-
-        <h2>Research &amp; Publications</h2>
-
-        <div class="publication">
-
-            <div class="publication-title">
-                CLIC: Iterative Closed-Loop Split Computing
-            </div>
-
-            <div class="entry-meta">
-                JWOC 2026 · Télécom Paris
-            </div>
-
-            <p>
-                A framework for communication-efficient
-                split inference through progressive feature
-                transmission and closed-loop feedback,
-                enabling adaptive information selection
-                according to task requirements.
-            </p>
-
-            <!-- Add paper and slides links later -->
-
-        </div>
-
-    </section>
-
-    <!-- EXPERIENCE -->
-
-    <section id="experience">
-
-        <h2>Research Experience</h2>
-
-        <div class="entry">
-
-            <div class="entry-title">
-                Inria Saclay — TRiBE Research Team
-            </div>
-
-            <div class="entry-meta">
-                Research Intern | April – September 2026
-            </div>
-
-            <p>
-                Conducted research on progressive split
-                inference, adaptive feature transmission,
-                and communication-efficient distributed AI.
-            </p>
-
-            <p>
-                Supervisor: Dr. Cédric Adjih
-            </p>
-
-        </div>
-
-        <div class="entry">
-
-            <div class="entry-title">
-                CEDRIC Laboratory — CNAM
-            </div>
-
-            <div class="entry-meta">
-                Research and Development Project
-            </div>
-
-            <p>
-                Worked on federated learning approaches
-                for network intrusion detection.
-            </p>
-
-        </div>
-
-        <div class="entry">
-
-            <div class="entry-title">
-                RUDN University
-            </div>
-
-            <div class="entry-meta">
-                Research Experience
-            </div>
-
-            <p>
-                Studied mathematical modeling and
-                queueing theory for communication networks.
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- EDUCATION -->
-
-    <section id="education">
-
-        <h2>Education</h2>
-
-        <div class="entry">
-
-            <div class="entry-title">
-                Conservatoire national des arts et métiers
-                (CNAM), Paris
-            </div>
-
-            <div>
-                Master's in Computer Networks and IoT Systems
-            </div>
-
-            <div class="entry-meta">
-                Graduated in 2026
-            </div>
-
-            <p>
-                <strong>
-                    Major de promotion — Rank 1/9
-                </strong>
-            </p>
-
-        </div>
-
-        <!-- Add Bachelor's degree details later -->
-
-    </section>
-
-</main>
-
-<footer>
-    &copy; 2026 Reachna Kim
-</footer>
-
-</body>
+   </section>
+   <section id="publications">
+    <h2>
+     Selected Publications
+    </h2>
+    <article class="entry">
+     <h3>
+      CLIC: Closed-Loop Iterative Communications for Split Inference
+     </h3>
+     <p>
+      <strong>
+       R. Kim
+      </strong>
+      , A. Dhaouadi, C. Adjih, P. Gu, N. Achir
+     </p>
+     <p class="muted">
+      Inria Research Report RR-9633, 2026
+     </p>
+     <p>
+      Closed-loop progressive feature transmission for communication-efficient distributed inference.
+     </p>
+     <!-- Add verified paper and slides links here. -->
+    </article>
+    <article class="entry">
+     <h3>
+      About the Service Model of Two Classes of Multicast Traffic
+     </h3>
+     <p>
+      F. A. Moskaleva,
+      <strong>
+       R. Kim
+      </strong>
+      , P. Kean
+     </p>
+     <p class="muted">
+      ITTMM 2024, pp. 94–97
+     </p>
+     <p class="distinction">
+      Best Paper Award
+     </p>
+     <p>
+      Mathematical modelling of resource-constrained multicast traffic.
+     </p>
+     <!-- Add verified publication link here. -->
+    </article>
+   </section>
+   <section id="news">
+    <h2>
+     News
+    </h2>
+    <dl class="news">
+     <dt>
+      Dec 2026
+     </dt>
+     <dd>
+      Upcoming research presentation at the Inria TRiBE seminar.
+     </dd>
+     <dt>
+      Nov 2026
+     </dt>
+     <dd>
+      Graduated from CNAM as
+      <strong>
+       major de promotion
+      </strong>
+      .
+     </dd>
+     <dt>
+      Oct 2026
+     </dt>
+     <dd>
+      Presented CLIC at JWOC 2026, Télécom Paris.
+     </dd>
+     <dt>
+      Sep 2026
+     </dt>
+     <dd>
+      Completed my research internship at Inria Saclay.
+     </dd>
+     <dt>
+      Apr 2026
+     </dt>
+     <dd>
+      Joined the TRiBE research team at Inria Saclay.
+     </dd>
+    </dl>
+   </section>
+   <section id="awards">
+    <h2>
+     Awards &amp; Honors
+    </h2>
+    <dl class="news">
+     <dt>
+      2026
+     </dt>
+     <dd>
+      Major de promotion, CNAM Paris
+     </dd>
+     <dt>
+      2024
+     </dt>
+     <dd>
+      Best Paper Award, ITTMM 2024
+     </dd>
+     <dt>
+      2024
+     </dt>
+     <dd>
+      2nd Degree Diploma for Graduation Research Work, RUDN University
+     </dd>
+     <dt>
+      2024
+     </dt>
+     <dd>
+      3rd Degree Diploma for Scientific Achievements, RUDN University
+     </dd>
+    </dl>
+   </section>
+  </main>
+  <footer>
+   © 2026 Reachna Kim
+  </footer>
+ </body>
 </html>

@@ -1,0 +1,365 @@
+
+/* ==============================
+   FONT
+============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+
+/* ==============================
+   GLOBAL SETTINGS
+============================== */
+
+:root {
+    --ink: #333333;
+    --muted: #626262;
+    --blue: #2474b8;
+    --line: #e5e5e5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 4px;
+}
+
+.container {
+    width: min(calc(100% - 48px), 1140px);
+    margin-inline: auto;
+}
+
+
+/* ==============================
+   NAVIGATION BAR
+============================== */
+
+header {
+    background: #222222;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 26px;
+    min-height: 54px;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #dddddd;
+    font-size: 15px;
+    padding: 4px 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ffffff;
+}
+
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
+main {
+    padding: 24px 0 48px;
+}
+
+
+/* ==============================
+   PROFILE SECTION
+============================== */
+
+.hero {
+    display: grid;
+    grid-template-columns: 145px minmax(0, 1fr);
+    gap: 38px;
+    align-items: start;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.portrait {
+    width: 145px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+}
+
+.role {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+}
+
+.social a {
+    font-weight: 700;
+}
+
+
+/* ==============================
+   HEADINGS AND TYPOGRAPHY
+============================== */
+
+h1,
+h2 {
+    font-family: Oswald, 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 34px;
+    margin: 0 0 4px;
+}
+
+h2 {
+    font-size: 27px;
+    margin: 0 0 16px;
+}
+
+h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 0 0 4px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+
+/* ==============================
+   SECTIONS
+============================== */
+
+section {
+    margin-top: 28px;
+    padding-top: 23px;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 16px;
+}
+
+#research {
+    border: 0;
+    padding-top: 0;
+}
+
+.muted,
+.tech,
+.entry-date {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* ==============================
+   EDUCATION AND EXPERIENCE
+============================== */
+
+.entry {
+    padding: 0 0 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+}
+
+.entry:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.entry p {
+    margin: 3px 0;
+}
+
+.institution {
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr) 170px;
+    gap: 20px;
+    align-items: start;
+}
+
+.logo {
+    width: 84px;
+    height: 68px;
+    object-fit: contain;
+    display: block;
+}
+
+.entry-date {
+    text-align: right;
+    padding-top: 2px;
+}
+
+.distinction {
+    color: #80631d;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   SELECTED PROJECTS
+============================== */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 24px;
+}
+
+.project {
+    border: 1px solid var(--line);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project h3 {
+    color: var(--blue);
+}
+
+.project .tech {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   SELECTED PUBLICATIONS
+============================== */
+
+#publications h3 {
+    color: var(--blue);
+}
+
+
+/* ==============================
+   NEWS
+============================== */
+
+.news {
+    display: grid;
+    grid-template-columns: 95px 1fr;
+    gap: 8px 15px;
+    margin: 0;
+}
+
+.news dt {
+    color: var(--muted);
+}
+
+.news dd {
+    margin: 0;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    border-top: 1px solid var(--line);
+    text-align: center;
+    padding: 22px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    nav {
+        gap: 4px 16px;
+    }
+
+    .hero {
+        grid-template-columns: 100px minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .portrait {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    .institution {
+        grid-template-columns: 60px minmax(0, 1fr);
+        gap: 4px 14px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 55px;
+        grid-row: span 2;
+    }
+
+    .entry-date {
+        grid-column: 2;
+        text-align: left;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news {
+        grid-template-columns: 75px 1fr;
+    }
+}
+
+
+/* ==============================
+   ACCESSIBILITY
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+}
